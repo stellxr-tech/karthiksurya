@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+   
+    <style>
+         body {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      font-family: 'Arial', sans-serif;
+    }
+        .dark-section {
+            background-color: #1e1e1e;
+            padding: 50px;
+            border-radius: 10px;
+        }
+        .dark-section h2 {
+            color: #ff5722; /* Custom color for heading */
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        .dark-section p {
+            color: #cfcfcf; /* Custom color for paragraph */
+            font-family: 'Roboto', sans-serif;
+            font-weight: 20;
+        }
+        .dark-section img {
+            border-radius: 10px;
+        }
+        .typewriter {
+            font-family: 'Anonymous Pro', monospace;
+            width: 70%;
+        }
+        h1 {
+            overflow: hidden;
+            margin: 0 auto;
+            display: inline-block;
+            font-weight: normal;
+            font-size: 16px; /* Adjusted font size */
+        }
+        h1:after {
+            content: '';
+            display: inline-block;
+            background-color: white;
+            margin-left: 2px;
+            height: 18px; /* Adjusted cursor height to match font size */
+            width: 3px; /* Adjusted cursor width */
+            animation: cursor 0.4s infinite;
+        }
+        @keyframes cursor {
+            0% { opacity: 1; }
+            49% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 0; }
+        }
+        .social-section {
+      background-color: #1a1a1a;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      color: #ffffff;
+    }
+    .social-section h2 {
+      font-size: 2rem;
+      color: #ff5722;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .social-section .icon-text {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      transition: transform 0.3s ease-in-out;
+    }
+    .social-section .icon-text i {
+      margin-right: 15px;
+      font-size: 2rem;
+      color: #ff5722;
+      transition: color 0.3s ease-in-out;
+    }
+    .social-section .icon-text:hover i {
+      color: #ffcc00;
+      transform: scale(1.2);
+    }
+    .social-section img {
+      border-radius: 10px;
+      max-width: 100%;
+      display: block;
+      margin: 0 auto;
+      transition: transform 0.3s ease-in-out;
+    }
+    .social-section img:hover {
+      transform: scale(1.1);
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .card {
+      background-color: #343a40;
+      border-color: #343a40;
+      height: 250px; /* Increase card height */
+    }
+    .card-title {
+      color: #fff;
+      margin-top: 20px; /* Adjust title margin */
+    }
+    .card-text {
+      color: #ced4da;
+    }
+
+
+    footer {
+  background-color: #1e1d1d;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Your Name</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#social-media">Social Media</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#latest-video">Latest Video</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      
+    <section class="container-fluid my-5 dark-section">
+        <div class="row align-items-center">
+            <div class="col-lg-6 mb-4 mb-lg-0">
+                <h2 class="display-4">Karthik Surya</h2>
+                <p class="lead">
+                	<div class="typewriter">
+                        <h1 id="text">Karthik Surya is an Indian YouTuber and television anchor from Trivandrum, India. He credits himself as the first lifestyle YouTube vlogger from Kerala and is mostly known for his YouTube channel Karthik Surya Vlogs. Karthik is also the host of the television programme Oru Chiri Iru Chiri Bumper Chiri broadcast on Mazhavil Manorama.</h1>
+                    </div>
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <img src="image-removebg-preview.png" class="img-fluid" alt="Descriptive Alt Text">
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+    <h3 class="w3-center">ABOUT ME</h3>
+    <p class="w3-center"><em>I love vlogging</em></p>
+    <p>
+        Karthik Surya, an eminent figure in the Indian entertainment scene, stands as a beacon of innovation and creativity in the realm of digital content creation. Hailing from the culturally rich region of Trivandrum, Kerala, Karthik has carved a distinctive niche for himself as a multifaceted personality, adorning the roles of both a prolific YouTuber and a charismatic television anchor. His journey into the realm of digital storytelling commenced in 2011 when he launched his YouTube channel, laying the foundation for what would soon burgeon into a thriving platform for lifestyle vlogging. However, it was not until 2017 that Karthik ventured into the realm of vlogging, marking a significant turning point in his career trajectory. Fuelled by an insatiable passion for content creation and a relentless pursuit of his dreams, Karthik took the bold leap to transition from his role as a business development manager at Technopark to embrace the exhilarating realm of full-time vlogging.</p>
+    <div class="w3-row">
+      <div class="w3-col m6 w3-center w3-padding-large">
+        <p><b><i class="fa fa-user w3-margin-right"></i>Kathik surya</b></p><br>
+        <img src="https://www.brandaware.in/uploads/influencers/banner_images/karthik-surya-55ff46dd5d2097.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+      </div>
+  
+      <!-- Hide this text on small devices -->
+      <div class="w3-col m6 w3-hide-small w3-padding-large">
+        <p>In 2021, Karthik's meteoric rise to prominence reached new heights when he was bestowed with the prestigious opportunity to helm the Mazhavil Manorama programme, "Oru Chiri Iru Chiri Bumper Chiri," further cementing his status as a prominent figure in the television landscape. Renowned as the trailblazer of lifestyle vlogging in Kerala, Karthik's YouTube channel serves as a captivating tapestry of his adventures, insights, and experiences, captivating the hearts and minds of millions of viewers worldwide. With an impressive subscriber base exceeding 2.27 million and a staggering view count surpassing 330,002,460 as of March 2023, Karthik continues to captivate audiences with his unique blend of authenticity, charm, and relatability, leaving an indelible mark on the digital landscape.</p>
+      </div>
+    </div>
+</div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-8 offset-md-2 text-center">
+            <h2 class="mb-4">My Latest Video</h2>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XEye9v3ySr8?si=TVqTfZP_Wvm3jXPy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p class="mt-4">In this video im unboxing some boxes that i got from my subscrivers and there is a big suprise there i show you a gift from youtube that was sent for the newyear</p>
+          </div>
+        </div>
+      </div>
+<br><br><br>
+    <section class="container my-5 social-section">
+        <div class="row align-items-center">
+          <div class="col-md-5">
+            <img src="karthiksurya1.png" class="img-fluid" alt="Your Image">
+          </div>
+          <div class="col-md-7">
+            <h2>Social Profiles</h2>
+            <div class="icon-text">
+              <i class="fab fa-instagram"></i> 1,100,000+ Instagram followers
+            </div>
+            <div class="icon-text">
+              <i class="fab fa-youtube"></i> 2,690,000+ YouTube subscribers
+            </div>
+            <div class="icon-text">
+              <i class="fab fa-twitter"></i> 6,500 + Twitter followers
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <div class="container">
+        <h2 class="section-heading">Featured Items</h2> <!-- Added section heading -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <i class="fas fa-user fa-5x mb-3"></i> <!-- Increased icon size -->
+                <h5 class="card-title"> Life Style Vlogging</h5>
+                <p class="card-text">i do life style vlogging</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <i class="fas fa-cog fa-5x mb-3"></i> <!-- Increased icon size -->
+                <h5 class="card-title">Tech Videos</h5>
+                <p class="card-text">i unbox tech stuffs and i do many tech videos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <i class="fas fa-chart-bar fa-5x mb-3"></i> <!-- Increased icon size -->
+                <h5 class="card-title">Reality Show</h5>
+                <p class="card-text">i work in a reality show</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="container">
+   
+          <div class="w3-panel">
+                   
+                    
+               
+            <!-- First Grid: Logo & About -->
+            <div class="w3-row">
+            <div class="w3-half w3-container">
+              <h1 class="w3-xxlarge w3-text-light-grey">Hello</h1>
+              <h1 class="w3-xxlarge w3-text-grey">I sell</h1>
+              <h1 class="w3-jumbo">merchandise</h1>
+            </div>
+            <div class="w3-half w3-container w3-xlarge w3-text-grey">
+              <p class="">i sell premium merchandise for my subscribers at a very low cost </p>
+              <p>the merchandise are very cool looking and affordable at the same time</p>
+            </div>
+            </div>
+            
+          <!-- Second Grid: Resent -->
+          <div class="w3-panel w3-text-grey">
+          <h4>MOST RECENT WORK:</h4>
+          </div>
+          <div class="w3-row">
+          <div class="w3-half w3-container">
+          <img src="https://folin.io/cdn/shop/files/0H5A1580copy.jpg?v=1692344424&width=493" style="width:100%">
+          </div>
+          <div class="w3-half w3-container">
+          <img src="https://folin.io/cdn/shop/files/0H5A1617copy.jpg?v=1692344532" style="width:100%">
+          <p class="w3-xlarge w3-text-grey">
+        </p>
+          </div>
+          </div>
+          </div>
+          <footer>
+            <p>Designed and Developed by <a href="https://stellxr.in">Stellxr.in</a></p>
+          </footer>
+          
+<script>		var i = 0;
+    // var A = 0;
+            var tag = document.getElementById("text");
+            var html = document.getElementById("text").innerHTML;
+            var attr = tag.setAttribute("data", html);
+            var txt = tag.getAttribute("data");
+            var speed = 170;
+    
+            function typeWriter() {
+              if (i <= txt.length) {
+                document.getElementById("text").innerHTML = txt.slice(0 , i + 1);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+                //console.log(document.getElementById("text").innerHTML);
+            }
+    
+    typeWriter();
+    
+    
+    // function deltxt() {
+    // 			if (A <= txt.length) {
+            // 	    document.getElementById("text").innerHTML = txt.slice(0, -A);
+            // 	    A++;
+            // 	    setTimeout(deltxt, 50);
+            // 	  }
+            // }
+            // var backward = speed * txt.length + 1000		;
+            // // console.log(backward);
+            // setTimeout( function () {
+            // 	deltxt();
+            // },backward);</script>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
