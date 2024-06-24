@@ -689,7 +689,7 @@ p.text {
             cursor: pointer;
         }
         .unique-button:hover {
-            background-color: #e6b800;
+            background-color: #3200e6;
         }
         @media (max-width: 768px) {
             .unique-container {
