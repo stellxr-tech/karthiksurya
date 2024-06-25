@@ -700,3 +700,163 @@ p.text {
                 text-align: center;
             }
         }
+
+
+
+
+
+
+        .containerfer {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+        }
+        .sectionfer {
+            position: relative;
+            flex: 1 1 50%;
+            margin: 0;
+            height: 400px; /* Increased height */
+            overflow: hidden;
+        }
+        .sectionfer img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlayfer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        .overlayfer h2 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .overlayfer p {
+            margin: 10px 0;
+            font-size: 1em;
+        }
+        .overlayfer a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border: 1px solid white;
+            margin-top: 10px;
+            font-size: 1em;
+            transition: background 0.3s;
+        }
+        .overlayfer a:hover {
+            background: white;
+            color: black;
+        }
+        @media (max-width: 768px) {
+            .sectionfer {
+                flex: 1 1 100%;
+                height: 300px; /* Adjust height for smaller screens */
+            }
+        }
+
+
+
+
+
+
+        .iphone-section {
+            position: relative;
+            width: 100%;
+            height: 70vh; /* Decreased height */
+            background-image: url('https://images.pexels.com/photos/270488/pexels-photo-270488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace with the correct path to your image */
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            color: white;
+        }
+        
+        .iphone-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+            z-index: 1;
+        }
+        
+        .content {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .content h1 {
+            font-size: 2.5em; /* Adjusted font size for responsiveness */
+            margin-bottom: 10px;
+        }
+        
+        .content p {
+            font-size: 1em; /* Adjusted font size for responsiveness */
+            margin-bottom: 20px;
+        }
+        
+        .buttons .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        
+        .buttons .btn:hover {
+            background-color: #ddd;
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .content h1 {
+                font-size: 2em;
+            }
+        
+            .content p {
+                font-size: 0.9em;
+            }
+        
+            .buttons .btn {
+                padding: 8px 16px;
+                margin: 0 5px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .content h1 {
+                font-size: 1.5em;
+            }
+        
+            .content p {
+                font-size: 0.8em;
+            }
+        
+            .buttons .btn {
+                padding: 6px 12px;
+                margin: 0 3px;
+            }
+        }
